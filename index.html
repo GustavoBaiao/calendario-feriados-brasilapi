@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Feriados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Calendário de Feriados</h1>
+
+        <label for="ano">Digite o ano:</label>
+        <input type="number" id="ano" placeholder="Ex: 2026 ">
+
+        <button id="btnConsultar">Consultar Feriados</button>
+        <p id="mensagemErro" class="mensagem-erro" hidden></p>
+
+        <h2>Feriados encontrados: <span id="totalFeriados">0</span></h2>
+
+        <div class="tabela-container">
+
+
+            <div id="proximoFeriado" class="proximo-feriado" hidden>
+                <h3>Próximo feriado</h3>
+                <p id="informacaoProximoFeriado"></p>
+            </div>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Dia da Semana</th>
+                        <th>Nome do Feriado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaFeriados">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

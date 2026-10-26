@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #334155;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #6d28d9;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4c1d95;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #4c1d95;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #c4b5fd;
+    border-radius: 8px;
+    outline: none;
+    width: 150px;
+    background-color: white;
+    color: #334155;
+}
+
+input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px #ede9fe;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #6d28d9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #5b21b6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(76, 29, 149, 0.08);
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ede9fe;
+}
+
+th {
+    background-color: #6d28d9;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #faf5ff;
+}
+
+tbody tr:hover {
+    background-color: #ede9fe;
+}
+
+
+.fim-de-semana {
+    background-color: #fce7f3;
+    color: #9d174d;
+}
+
+.fim-de-semana:hover {
+    background-color: #fbcfe8;
+}
+
+.proximo-feriado {
+    background-color: #ede9fe;
+    border-left: 5px solid #7c3aed;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+    color: #4c1d95;
+}
+
+.proximo-feriado[hidden] {
+    display: none;
+}
+
+.mensagem-erro {
+    color: #b91c1c;
+    background-color: #fee2e2;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table {
+        min-width: 550px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 30px 20px;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
